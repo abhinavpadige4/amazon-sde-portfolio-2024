@@ -1,0 +1,89 @@
+/* Dark Theme Overrides */
+.dark-theme {
+    --bg-color: #0d0d0d;
+    --surface-color: #1a1a1a;
+    --primary-color: #ff9900;
+    --accent-color: #00e676;
+    --text-color: #e0e0e0;
+    --text-light: #b0b0b0;
+    --border-color: #333333;
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.3);
+    --shadow-lg: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Dark theme specific adjustments */
+.dark-theme .hero {
+    background: linear-gradient(135deg, var(--bg-color) 0%, var(--surface-color) 100%);
+}
+
+.dark-theme .hero-content h1 {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.dark-theme .hero-bg-pattern {
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(255, 153, 0, 0.15) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(0, 230, 118, 0.15) 0%, transparent 20%);
+}
+
+.dark-theme .about-stats .stat,
+.dark-theme .skill-category,
+.dark-theme .project-card,
+.dark-theme .timeline-content,
+.dark-theme .contact-info,
+.dark-theme .social-link,
+.dark-theme .footer {
+    background: var(--surface-color);
+}
+
+.dark-theme .form-group input,
+.dark-theme .form-group textarea {
+    background: var(--surface-color);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.dark-theme .form-group input:focus,
+.dark-theme .form-group textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(255, 153, 0, 0.25);
+}
+
+.dark-theme .project-tech span {
+    background: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.dark-theme .metric {
+    background: var(--border-color);
+}
+
+.dark-theme .timeline::before {
+    background: var(--primary-color);
+}
+
+.dark-theme .timeline-icon {
+    background: var(--primary-color);
+}
+
+.dark-theme .btn-primary {
+    background: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.dark-theme .btn-primary:hover {
+    background: #e68a00;
+}
+
+.dark-theme .btn-secondary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.dark-theme .btn-secondary:hover {
+    background: var(--primary-color);
+    color: var(--bg-color);
+}
